@@ -1,3 +1,4 @@
+do
 repeat task.wait() until game:IsLoaded()
 
 local Players = game:GetService("Players")
@@ -26,4 +27,5 @@ else
     end
 
     player:Kick("Game not supported!\n\nSupported Games:" .. supported)
+end
 end
