@@ -8,7 +8,7 @@
 ╚══════╝  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝
 
             L U X V S   H U B
-         Developed by Louissxe || discord.gg/xUgXNZjc
+Developed by Louissxe || discord.gg/xUgXNZjc
 ]]
 repeat task.wait() until game:IsLoaded()
 
