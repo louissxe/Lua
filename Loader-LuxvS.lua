@@ -23,6 +23,10 @@ local Games = {
     [130342654546662] = {
         name = "Sambung Kata",
         url = "https://raw.githubusercontent.com/louissxe/Lua/refs/heads/main/sambung-kata.lua"
+    },
+    [121442629947656] = {
+        name = "Fishzar",
+        url = "https://raw.githubusercontent.com/nexiuse/Luxvs-X-Nex-Hub-Fishzar/main/Luxv%27S%20X%20Nex%20Hub.lua"
     }
 }
 
