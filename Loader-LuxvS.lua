@@ -24,6 +24,14 @@ local Games = {
         name = "Sambung Kata",
         url = "https://raw.githubusercontent.com/louissxe/Lua/refs/heads/main/sambung-kata.lua"
     },
+     [121500015379301] = {
+        name = "FishGod",
+        url = "https://raw.githubusercontent.com/nexiuse/FishGodLuxvsHubXNex/refs/heads/main/FishGodLuxvsHubXNex.lua"
+    },
+     [2753915549] = {
+        name = "BloxFruits",
+        url = "https://raw.githubusercontent.com/nexiuse/Luxv-SHubXNexBloxFruits/refs/heads/main/Luxv'SHubXNexBloxFruits.lua"
+    },
     [121442629947656] = {
         name = "Fishzar",
         url = "https://raw.githubusercontent.com/nexiuse/Luxvs-X-Nex-Hub-Fishzar/main/Luxv%27S%20X%20Nex%20Hub.lua"
