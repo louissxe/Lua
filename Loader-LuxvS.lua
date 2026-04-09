@@ -10,10 +10,8 @@
             L U X V S   H U B
 Developed by Louissxe || discord.gg/xUgXNZjc
 ]]
-repeat task.wait() until game:IsLoaded()
 
-local Players = game:GetService("Players")
-local player = Players.LocalPlayer
+repeat task.wait() until game:IsLoaded()
 
 local Games = {
     [131623223084840] = {
@@ -24,15 +22,15 @@ local Games = {
         name = "Sambung Kata",
         url = "https://raw.githubusercontent.com/louissxe/Lua/refs/heads/main/sambung-kata.lua"
     },
-     [121500015379301] = {
+    [121500015379301] = {
         name = "FishGod",
         url = "https://raw.githubusercontent.com/nexiuse/FishGodLuxvsHubXNex/refs/heads/main/FishGodLuxvsHubXNex.lua"
     },
-     [2753915549] = {
+    [2753915549] = {
         name = "BloxFruits",
         url = "https://raw.githubusercontent.com/nexiuse/Luxv-SHubXNexBloxFruits/refs/heads/main/Luxv'SHubXNexBloxFruits.lua"
     },
-     [70845479499574] = {
+    [70845479499574] = {
         name = "BiteByNight",
         url = "https://raw.githubusercontent.com/louissxe/Lua/refs/heads/main/keyless/bitebynight.lua"
     },
@@ -42,11 +40,14 @@ local Games = {
     }
 }
 
-local placeId = game.PlaceId
-local gameData = Games[placeId]
-
-if gameData then
-    loadstring(game:HttpGet(gameData.url))()
-else
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/louissxe/Lua/refs/heads/main/Universal.lua"))()
+local function loadScript(url)
+    return loadstring(game:HttpGet(url))()
 end
+
+local placeId = game.PlaceId
+local selectedGame = Games[placeId]
+
+local url = selectedGame and selectedGame.url
+    or "https://raw.githubusercontent.com/louissxe/Lua/refs/heads/main/Universal.lua"
+
+loadScript(url)
