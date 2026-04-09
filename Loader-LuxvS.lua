@@ -32,6 +32,10 @@ local Games = {
         name = "BloxFruits",
         url = "https://raw.githubusercontent.com/nexiuse/Luxv-SHubXNexBloxFruits/refs/heads/main/Luxv'SHubXNexBloxFruits.lua"
     },
+     [70845479499574] = {
+        name = "BiteByNight",
+        url = "https://raw.githubusercontent.com/louissxe/Lua/refs/heads/main/keyless/bitebynight.lua"
+    },
     [121442629947656] = {
         name = "Fishzar",
         url = "https://raw.githubusercontent.com/nexiuse/Luxvs-X-Nex-Hub-Fishzar/main/Luxv%27S%20X%20Nex%20Hub.lua"
