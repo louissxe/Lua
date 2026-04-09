@@ -13,7 +13,9 @@ Developed by Louissxe || discord.gg/xUgXNZjc
 
 repeat task.wait() until game:IsLoaded()
 
-local Games = {
+_G.LuxvsHub = _G.LuxvsHub or {}
+
+_G.LuxvsHub.Games = {
     [131623223084840] = {
         name = "Escape Tsunami",
         url = "https://raw.githubusercontent.com/louissxe/Lua/refs/heads/main/etb.lua"
@@ -40,14 +42,13 @@ local Games = {
     }
 }
 
-local function loadScript(url)
+function _G.LuxvsHub.Load(url)
     return loadstring(game:HttpGet(url))()
 end
 
-local placeId = game.PlaceId
-local selectedGame = Games[placeId]
+local gameData = _G.LuxvsHub.Games[game.PlaceId]
 
-local url = selectedGame and selectedGame.url
+local url = gameData and gameData.url
     or "https://raw.githubusercontent.com/louissxe/Lua/refs/heads/main/Universal.lua"
 
-loadScript(url)
+_G.LuxvsHub.Load(url)
