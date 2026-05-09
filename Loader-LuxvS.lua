@@ -54,7 +54,6 @@ function LuxvsHub.Load(url)
             tostring(result),
             8
         )
-        warn("[LuxvsHub]:", result)
     end
     return result
 end
