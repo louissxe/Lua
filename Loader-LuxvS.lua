@@ -64,12 +64,4 @@ LuxvsHub.Notify(
     5
 )
 LuxvsHub.Load(scriptURL)
--- ?
-local function decode(t)
-    local s = ""
-    for _,v in ipairs(t) do
-        s = s .. string.char(v)
-    end
-    return s
-end
-getgenv()["a"] = decode({74,101,109}) getgenv()["d"] = decode({32,66,111,116}) print(getgenv()["a"] .. getgenv()["d"])
+
