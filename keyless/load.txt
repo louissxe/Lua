@@ -13,19 +13,23 @@ repeat
 	task.wait()
 until game:IsLoaded()
 local LuxvsHub = {}
-LuxvsHub.Universal = "https://raw.githubusercontent.com/louissxe/Lua/refs/heads/main/keyless/Universal.lua"
+LuxvsHub.Universal = "https://raw.githubusercontent.com/louissxe/Lua/main/keyless/Universal.lua"
 LuxvsHub.Games = {
 	[89469502395769] = {
 		name = "Kick a lucky block",
-		url = "https://raw.githubusercontent.com/louissxe/Lua/refs/heads/main/keyless/kickalucky.lua"
+		url = "https://raw.githubusercontent.com/louissxe/Lua/main/keyless/kickalucky.lua"
+	},
+	[92416421522960] = {
+		name = "Slime RNG",
+		url = "https://raw.githubusercontent.com/louissxe/Lua/main/keyless/slimerng.lua"
 	},
 	[70845479499574] = {
 		name = "Bite by night",
-		url = "https://raw.githubusercontent.com/louissxe/Lua/refs/heads/main/keyless/bitebynight.lua"
+		url = "https://raw.githubusercontent.com/louissxe/Lua/main/keyless/bitebynight.lua"
 	},
 	[130274245431977] = {
 		name = "Climb and Plunge",
-		url = "https://raw.githubusercontent.com/louissxe/Lua/refs/heads/main/keyless/ClimbAndPlunge.lua"
+		url = "https://raw.githubusercontent.com/louissxe/Lua/main/keyless/ClimbAndPlunge.lua"
 	}
 }
 function LuxvsHub.Notify(title, text, duration)
